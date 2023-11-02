@@ -901,6 +901,7 @@
                             <p class="design_text creative_text touch" data-aos="fade-up">Fill out my form
                                 below and send me an email.
                             </p>
+                            <form action="send_email.php" method="post">
                             <div class="form-main" onsubmit="sendmail()">
                                 <div class="form">
                                     <input type="text" name="name" required autocomplete="off">
@@ -909,31 +910,32 @@
                                     </label>
                                 </div>
                                 <div class="form">
-                                    <input type="email" name="name" required autocomplete="off">
+                                    <input type="email" name="email" required autocomplete="off">
                                     <label class="label-name">
                                         <span class="content-name">E-mail*</span>
                                     </label>
                                 </div>
                                 <div class="form">
-                                    <input type="text" name="name" required autocomplete="off">
+                                    <input type="number" name="phone" required autocomplete="off">
                                     <label class="label-name">
                                         <span class="content-name">Phone Number</span>
                                     </label>
                                 </div>
                                 <div class="form" id="form2">
-                                    <input type="text" name="name" required autocomplete="off">
+                                    <input type="text" name="msg" required autocomplete="off">
                                     <label class="label-name">
                                         <span class="content-name" id="content-name2">Message*</span>
                                     </label>
                                 </div>
                                 <div class="button-required">
-                                    <button class="send-btn">
+                                    <button class="send-btn" type="submit" name="send">
                                         Send Message
                                         <span class="send-span"></span>
                                     </button>
                                     <p class="required">*Marked fields are required to fill.</p>
                                 </div>
                             </div>
+                            </form>
                         </div>
                         <div class="col-xl-6 col-lg-6 form-spacer2 active_menus" id="active_menus">
                             <div class="yellow_circle" id="spacing-circle"></div>
