@@ -1,9 +1,4 @@
-/*------------------------------------------------------------------
-  Project: Nairobi Galzaro
-  Author: Upsqode
-  Last change: 02/10/2023 
-  Primary use: 
------------------------------------------------------------------- */
+
 /*-----------------------[Table of contents]------------------------ 
 1.Default CSS 
 2.Menu CSS
@@ -143,8 +138,8 @@ ul {
 .pluse {
     position: relative;
     width: 100%;
-    height: 700px;
-    background-color: #e20a2e;
+    height: 500px;
+    background-color: #ffaa00;
     border-radius: 50%;
 }
 
@@ -189,19 +184,19 @@ ul {
     top: 0;
     width: 100%;
     overflow: hidden;
-    padding: 25px 34px 25px;
+    padding: 15px 34px 15px;
     background-color: var(--primary-color);
     z-index: 50;
 }
 
 .menu-btn a {
-    position: relative
+    position: relative;
 }
 
 .yellow-line {
     width: 0px;
     height: 10px;
-    background-color: #e20a2e !important;
+    background-color: #ffaa00 !important;
     position: absolute;
     z-index: -1;
     left: 50%;
@@ -513,7 +508,7 @@ svg {
     --offset-orthogonal: calc(var(--size) * 0.65);
     --offset-diagonal: calc(var(--size) * 0.45);
     transform: scale(0.75);
-    color: #e20a2e;
+    color: #ffaa00;
     box-shadow: inset 0 0 0 var(--size), calc(var(--offset-orthogonal) * -1) 0 0 var(--ray-size), var(--offset-orthogonal) 0 0 var(--ray-size), 0 calc(var(--offset-orthogonal) * -1) 0 var(--ray-size), 0 var(--offset-orthogonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) calc(var(--offset-diagonal) * -1) 0 var(--ray-size), var(--offset-diagonal) var(--offset-diagonal) 0 var(--ray-size), calc(var(--offset-diagonal) * -1) var(--offset-diagonal) 0 var(--ray-size), var(--offset-diagonal) calc(var(--offset-diagonal) * -1) 0 var(--ray-size);
 }
 
@@ -539,8 +534,8 @@ svg {
 
 /*  ************************* 4.Main Page ************************** */
 .nairobi_img1 {
-    max-width: 80%;
-    border-radius: 40%;
+    max-width: 100%;
+    border-radius: 50%;
     position: relative;
     left: 150px;
     margin-top: 122px;
@@ -550,11 +545,13 @@ svg {
     position: absolute;
     left: 63px;
     bottom: 0px;
+    margin-top: 80px;
 }
 
 .black-multiplication {
     position: relative;
     filter: var(--svg-color);
+    
 }
 
 .yellow-multiplication {
@@ -562,6 +559,7 @@ svg {
     left: -3px;
     top: -9px;
     filter: var(--svg-skin-color);
+   
 }
 
 .half-circle-main {
@@ -616,14 +614,14 @@ svg {
 }
 
 .singal-text {
-    color: var(--secondary-color);
+    color:  #FFAF00;
     font-family: Fascinate;
     font-style: normal;
-    font-size: 128px;
-    font-weight: 900;
+    font-size: 110px;
+    font-weight: 800;
     line-height: 128px;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .singal-text {
@@ -729,13 +727,13 @@ svg {
     align-items: center;
     padding: 20px 0px;
 }
-
 .fb a {
     color: var(--text-color);
     font-size: 20px;
     line-height: 20px;
     padding: 0px 10px;
     text-decoration: none;
+ 
 }
 
 .fb a:hover {
@@ -802,8 +800,8 @@ svg {
 }
 
 .about-text {
-    padding: 40px 10px;
-    font-size: 100px;
+    padding: 20px 10px;
+    font-size: 80px;
     line-height: 100px;
     text-transform: uppercase;
     text-align: center;
@@ -1072,23 +1070,24 @@ svg {
 }
 
 .slideshow2 li:nth-child(1) .img-bg-slide {
-    background-image: url('../img/img1.jpeg');
+    background-image: url('../img/2.jpeg');
+    
 }
 
-.slideshow2 li:nth-child(2) .img-bg-slide {
-    background-image: url('../img/img2.jpeg');
+/* .slideshow2 li:nth-child(2) .img-bg-slide {
+    background-image: url('../img/img\ 4.jpeg');
     animation-delay: 5s;
-}
+} */
 
 .slideshow2 li:nth-child(3) .img-bg-slide {
-    background-image: url('../img/img1.jpeg');
+    background-image: url('../img/2.jpeg');
     animation-delay: 10s;
 }
 
-.slideshow2 li:nth-child(4) .img-bg-slide {
-    background-image: url('../img/img2.jpeg');
+/* .slideshow2 li:nth-child(4) .img-bg-slide {
+    background-image: url('../img/img\ 4.jpeg');
     animation-delay: 15s;
-}
+} */
 
 @keyframes backgroundSlideshow {
     0% {
@@ -1189,7 +1188,7 @@ body.dark-mode .shapes-bg {
 }
 
 .video-overlay-close:hover {
-    color: #fa183d;
+    color: #ffaa00;
 }
 
 .video-overlay iframe {
@@ -1499,7 +1498,7 @@ body.dark-mode .black-yellow-circle {
 
 .resume-img {
     max-width: 100%;
-    border-radius: 30%;
+    border-radius: 50%;
     height: 500px;
 }
 
@@ -1740,6 +1739,89 @@ body.dark-mode .black-yellow-circle {
 .send-btn1:hover .send-span:after {
     bottom: 0;
 }
+/* resume*/
+.Download {
+    border: none;
+    background-color: transparent;
+    position: relative;
+    overflow: hidden;
+    height: 65px;
+    width: 220px;
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.Download:hover {
+    color: #ffaa00 !important;
+}
+
+.Download:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: all 1s;
+}
+
+.Download:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-color);
+    transition: all 1s;
+}
+
+.Download:hover:before {
+    left: 0;
+}
+
+.Download:hover:after {
+    right: 0;
+}
+
+.send-span:before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: all 1s;
+}
+
+.Download:hover .send-span:before {
+    top: 0;
+}
+
+.send-span:after {
+    content: '';
+    position: absolute;
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background-color: var(--secondary-color);
+    transition: all 1s;
+}
+
+.Download:hover .send-span:after {
+    bottom: 0;
+}
+
+
+/* resume*/
 
 /* Skill Bar end */
 .knowledge-text {
@@ -1920,7 +2002,7 @@ body.dark-mode .portfolio-bg {
     color: var(--text-color);
     font-family: jost;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     line-height: 20px;
     text-transform: uppercase;
     margin: 0;
@@ -2713,7 +2795,7 @@ button.btn-toggle-show2:hover {
     font-size: 30px;
     font-weight: lighter;
     text-align: center;
-    background-color: #e20a2e;
+    background-color: #ffaa00;
     color: var(--secondary-color);
     margin: 0;
 }
@@ -2807,7 +2889,7 @@ ul {
 .sub-btn-main:hover {
     color: var(--secondary-color);
     transition: 0.5s;
-    background: #e20a2e;
+    background: #ffaa00;
 }
 
 /*  ************************* 13.Email Section CSS ************************** */
@@ -2934,7 +3016,7 @@ body.dark-mode .email-bg {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-bottom: 3px solid #e20a2e;
+    border-bottom: 3px solid #ffaa00;
     bottom: -1px;
     left: 0px;
     transform: translateX(-100%);
@@ -2959,7 +3041,7 @@ body.dark-mode .email-bg {
 .form input:valid+.label-name .content-name {
     transform: translateY(-50%);
     font-size: 20px;
-    color: #e20a2e;
+    color: #ffaa00;
 }
 
 .form input:focus+.label-name::after,
@@ -2985,7 +3067,7 @@ body.dark-mode .email-bg {
 }
 
 .send-btn:hover {
-    color: #e20a2e;
+    color: #ffaa00;
 }
 
 .send-btn:before {
@@ -3127,7 +3209,7 @@ body.dark-mode .email-bg {
     position: absolute;
     width: 85px;
     height: 85px;
-    background: #e20a2e;
+    background: #ffaa00;
     border-radius: 50%;
     transform: scale(0, 0);
     transition: .4s;
@@ -3150,7 +3232,7 @@ body.dark-mode .email-bg {
 .big-yellow-circle4 {
     width: 40px;
     height: 40px;
-    background-color: #e20a2e;
+    background-color: #ffaa00;
     border-radius: 50%;
     position: absolute;
     left: 80px;
@@ -3194,7 +3276,7 @@ body.dark-mode .email-bg {
     height: 90%;
     top: 5%;
     left: 5%;
-    background: #e20a2e;
+    background: #ffaa00;
     border-radius: 50%;
     transform: scale(0, 0);
     transition: .4s;
@@ -3265,7 +3347,7 @@ body.dark-mode .email-bg {
     animation: spinner 1s infinite linear;
     border-radius: 50%;
     border: 10px solid transparent;
-    border-top-color: #e20a2e;
+    border-top-color: #ffaa00;
     height: 9em;
     margin: 0 auto 3.5em auto;
     width: 9em;
@@ -3273,7 +3355,7 @@ body.dark-mode .email-bg {
 
 .container-preloader .animation-preloader .txt-loading .characters:before {
     animation: characters 4s infinite;
-    color: #e20a2e;
+    color: #ffaa00;
     content: attr(data-preloader-text);
     left: 0;
     opacity: 0;
